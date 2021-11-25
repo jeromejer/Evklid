@@ -1,0 +1,119 @@
+@import url('./fonts/stylesheet.css');
+@import url('./header.css');
+@import url('./project.css');
+@import url('./about-us.css');
+@import url('./details.css');
+@import url('./benefis.css');
+@import url('./working.css');
+@import url('./questions.css');
+@import url('./footer.css');
+
+
+
+
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
+
+.main {
+    max-width: 92%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    /* указать шрифт под проект*/
+    font-weight: 400;
+    color: #FFFFFF; /*цвет под ваш проект*/
+    background-color: #FFFFFF; /*цвет под ваш проект*/
+    width: 100%;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+ul,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .main {
+        max-width: 924px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        max-width: 668px;
+        width: 100%;
+    }
+}
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn:focus {
+    background: rgba(255, 153, 0, 0.7);
+}
+
+.btn:hover {
+    background: rgba(255, 153, 0, 0.7);
+}
+
+.btn:active {
+    background: #E1670E;;
+}

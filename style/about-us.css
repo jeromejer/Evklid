@@ -1,0 +1,27 @@
+.about-us {
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.about-us__title {
+    font-weight: 400;
+    color: #333333;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.about-us__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+    margin-top: 20px;
+    max-width: 1235px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us {
+        margin: 80px auto 0;
+    }
+}

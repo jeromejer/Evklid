@@ -1,0 +1,139 @@
+.header {
+    max-width: 1920px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+    max-width: 224px;
+    height: auto;
+    width: 100%;
+}
+
+.header__list {
+    display: flex;
+    gap: 85px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.header__nav {
+    margin: auto;
+    margin-right: 85px;
+}
+
+.header__content {
+    max-width: 92%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px 0 14px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+    background-image: url('../img/icon/menu.svg');
+    border: none;
+    width: 40px;
+    background-repeat: no-repeat;
+    height: 33px;
+    background-color: #ffffff00;
+    padding: 5px;
+    background-position: center;
+    display: none;
+    transition: 0.2s;
+    border: 2px solid #ff990000;
+}
+
+.header__menu:focus {
+    border: 2px solid #FF9900;
+}
+
+.header__menu:active {
+    background-image: url('../img/icon/active.svg');
+    border: 2px solid #ff990000;
+}
+
+
+.header__search {
+    background-image: url('../img/icon/search.svg');
+    border: none;
+    width: 32px;
+    background-repeat: no-repeat;
+    height: 32px;
+    background-color: #ffffff00;
+    padding: 5px;
+    background-position: center;
+    transition: 0.2s;
+    border: 2px solid #ff990000;
+}
+
+.header__search:hover {
+    background-image: url('../img/icon/hover.svg');
+}
+
+.header__search:focus {
+    border: 2px solid #FF9900;
+    background-image: url('../img/icon/search.svg');
+}
+
+.header__item {
+    transition: 0.2s;
+    padding: 5px;
+    border: 2px solid #ff990000;
+}
+
+.header__item:focus { 
+    border: 2px solid #FF9900;
+    color: #333333;
+}
+
+.header__item:hover { 
+    border-bottom: 2px solid #FF9900;
+}
+
+.header__item:active { 
+    border: 2px solid #ff990000;
+    border-bottom: 2px solid #E1670E;
+    color: #E1670E;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .header__menu {
+        display: block;
+    }
+
+    .header__nav {
+       display: none;
+    }
+    
+    .header__content {
+        justify-content: space-between;
+        max-width: 924px;
+        width: 100%;
+        padding: 26px 0;
+    }
+
+    .main {
+        max-width: 924px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        max-width: 768px;
+    }
+
+    .header__content {
+        max-width: 668px;
+        padding: 10px 0;
+    }
+
+}

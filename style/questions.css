@@ -1,0 +1,111 @@
+.questions {
+    margin-top: 100px;
+}
+
+.questions__title {
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.questions__list {
+    margin-top: 32px;
+    color: #333333;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.questions__btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #ECECEC;
+    border-radius: 50%;
+    background-image: url('../img/Stroke.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.questions__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 39px 0;
+    border-top: 1px solid #CACACA;
+    transition: 0.3s;
+}
+
+.questions__item:focus, .questions__item:hover{
+    color: #FF9900;
+    border-top: 1px solid #FF9900;
+}
+
+.questions__item:focus + .questions__item, .questions__item:hover + .questions__item{
+    border-top: 1px solid #FF9900;
+}
+
+.questions__item:focus .questions__span, .questions__item:hover .questions__span{
+    color: #FF9900;
+}
+
+.questions__btn:active, .questions__btn:hover {
+    background-color: #FF9900;
+}
+
+.questions__item:focus .questions__btn, .questions__item:hover .questions__btn {
+    background-color: #FF9900;
+}
+
+.questions__item:last-child:hover, .questions__item:last-child:active {
+    border-bottom: 1px solid #FF9900;
+}
+
+
+
+.questions__question {
+    width: 100%;
+}
+
+.questions__span {
+    color: #CACACA;
+    transition: 0.3s;
+}
+
+.questions__item:last-child {
+    border-bottom: 1px solid #CACACA;
+}
+
+.questions__description {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 30px;
+    max-width: 1003px;
+    width: 100%;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .questions {
+        margin-top: 80px;
+    }
+
+    .questions__item {
+        padding: 30px 0;
+    }
+
+
+    .questions__question {
+        max-width: 756px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .questions {
+        margin-top: 80px;
+    }
+    
+}

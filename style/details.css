@@ -1,0 +1,132 @@
+.details {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-image: url(../img/Rectangle2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 868px;
+    width: 100%;
+    margin-right: 32px;
+}
+
+.details__group {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details__description {
+    max-width: 454px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+}
+.details__btn {
+    padding: 20px 38px;
+    border: 3px solid #FF9900;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.details__benefis {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.details__benefis-content {
+    padding: 64px 118px 64px 298px;
+    border: 1px solid #CACACA;
+    background-repeat: no-repeat;
+    background-position: 60px;
+    box-sizing: border-box;
+    max-width: 870px;
+    width: 100%;
+}
+
+.details__benefis-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.details__benefis-description {
+    font-weight: 400;
+    color: #333333;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 32px;
+}
+.details__benefis-content:first-child {
+    background-image: url('../img/Frame16.svg');
+}
+
+.details__benefis-content:last-child {
+    background-image: url('../img/Frame12.svg');
+}
+
+
+@media screen and (max-width: 1024px) {
+    .about-us {
+        margin: 80px auto 0;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .details__content {
+        padding-top: 444px;
+        max-width: 924px;
+    }
+
+    .details__benefis {
+        gap: 0;
+    }
+
+    .details__benefis-content {
+        max-width: inherit;
+        margin-top: 32px;
+        padding: 65px 154px 65px 316px;
+        background-position: 77px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .details__group {
+        padding: 34px 40px;
+    }
+
+    .details__description {
+        max-width: 366px;
+    }
+
+    .details__content {
+        background-position: center;
+        padding-top: 454px;
+    }
+
+    .details__benefis-content {
+        padding: 34px 46px 34px 168px;
+        background-position: 40px;
+    background-size: 114px;
+    }
+}

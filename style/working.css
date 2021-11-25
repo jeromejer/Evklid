@@ -1,0 +1,168 @@
+.working {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.working__title {
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.working__list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    gap: 85px;
+}
+
+.working__item {
+    display: block;
+    padding: 5px;
+    border: 2px solid #ff990000;
+    transition: 0.3s;
+}
+
+.working__item:focus {
+    border: 2px solid #FF9900;
+}
+
+.working__item:hover {
+    color: #FF9900;
+    border: 2px solid #ff990000;
+}
+
+.working__item:active {
+    color: #E1670E;
+}
+
+
+.working__item_active {
+    color: #E1670E;
+}
+
+.working__content {
+    margin-top: 50px;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    display: none; 
+}
+
+.working__content_active {
+    display: flex;
+}
+
+.working__consultations-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.working__consultations-description {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.working__consultations {
+    max-width: 758px;
+    width: 100%;
+    margin-right: 142px;
+}
+
+
+.working__details {
+    padding: 20px 38px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    background: #FF9900;
+    border: none;
+    margin-right: 32px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 175px;
+    width: 100%;
+}
+
+.working__btn {
+    margin-top: 50px;
+    display: flex;
+}
+
+.working__contract {
+    color: #333333;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 19px 38px;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+}
+
+.working__contract:focus{
+    background: #666666;
+    color: #FFFFFF;
+    border: none;
+}
+
+.working__contract:hover{
+    background: #666666;
+    color: #FFFFFF;
+    border: none;
+}
+
+.working__contract:active {
+    background: #000000;
+    border: none;
+}
+
+.working__img {
+    max-width: 870px;
+    width: 100%;
+    background-image: url('../img/Rectangle18.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .working {
+        margin-top: 80px;
+    }
+
+    .working__consultations {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .working__list {
+        justify-content: space-between;
+    }
+
+    .working__img {
+        height: 284px;
+    }
+
+    .working__content {
+        flex-direction: column;
+    }
+
+    .working__consultations {
+        order: 2;
+        margin-top: 38px;
+    }
+
+    .working__btn {
+        margin-top: 25px;
+    }
+}
